@@ -3,7 +3,8 @@ function sort(a) {
     let n = a.length;
 
     // Outer loop to iterate through each element in the array
-    for (let i = 0; i < n; i++) {
+    // i = 1 because we assume that the first element is sorted
+    for (let i = 1; i < n; i++) {
         // Store the current element to be inserted in the correct position
         let numberToInsert = a[i];
         // Initialize the index for comparison
